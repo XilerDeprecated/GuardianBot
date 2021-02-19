@@ -1,0 +1,5 @@
+tensorflow
+nudenet
+discord.py
+utilsx
+python-dotenv
