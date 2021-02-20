@@ -19,7 +19,7 @@ class Bot(BotX):
         modules = list(map(lambda extension: extension.replace("/", ".")[:-3], glob("src/modules/*.py")))
 
         for index, _ in enumerate(self.load_extensions(modules)):
-            Logger.info(f"Loaded: {modules[index].replace('src/modules.', '')}")
+            Logger.info(f"Loaded: {modules[index].replace('src.modules.', '')}")
 
     async def on_ready(self):
         Logger.info(f"Successfully connected to discord as {self.user}")
